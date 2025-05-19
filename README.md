@@ -14,7 +14,7 @@ Add Task : - Create form fields for title, date, time, and description
            - Create task object and push to task array
            - Save task to localStorage
 
-Render Task List : - Create <li> elements dynamically using document.createElement
+Render Task List : - Create li elements dynamically using document.createElement
                    - Display task info
                    - Append to #task-list container
                    - Add delete button per item with onclick handler
