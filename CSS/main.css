@@ -1,0 +1,141 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* General Body */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f4f6;
+    color: #333;
+}
+
+/* Container */
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Headings */
+h1,
+h2 {
+    text-align: center;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+/* Form */
+.form-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.form-group input {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    flex: 1 1 180px;
+    font-size: 16px;
+}
+
+.form-group button {
+    padding: 10px 20px;
+    background-color: #4f46e5;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.form-group button:hover {
+    background-color: #4338ca;
+}
+
+/* Task List */
+.task-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.task-item {
+    background-color: #f9fafb;
+    border: 1px solid #e5e7eb;
+    padding: 12px 16px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    transition: background 0.2s ease;
+}
+
+.task-item:hover {
+    background-color: #eef2ff;
+}
+
+/* Delete button */
+.delete-btn {
+    background-color: #ef4444;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    font-size: 14px;
+    border-radius: 6px;
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.delete-btn:hover {
+    background-color: #dc2626;
+}
+
+/* Calendar */
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    /* 7 columns for days of week */
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.calendar-day {
+    background-color: #e0e7ff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s ease;
+    user-select: none;
+}
+
+.calendar-day:hover {
+    background-color: #c7d2fe;
+}
+
+.has-task {
+    background-color: #93c5fd;
+    color: #111827;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .form-group {
+        flex-direction: column;
+    }
+
+    .calendar {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
